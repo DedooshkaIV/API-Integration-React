@@ -1,0 +1,22 @@
+body {
+    background-color: #F1EAFB;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar-brand {
+    font-family: 'Press Start 2P';
+    font-size: 18px;
+}
+
+h1 {
+    color: #39265C;
+}
+
+.card {
+    transition: 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(57, 38, 92, 0.2) !important;
+}
