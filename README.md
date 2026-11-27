@@ -12,6 +12,8 @@ A responsive product catalog web application built using React and Bootstrap. Th
 - Separate service layer for API requests
 - Responsive product grid
 - Product ratings, prices and stock information
+- Interactive Add/Remove from Cart buttons
+- Conditional rendering of cart confirmation messages
 - Custom navbar, footer and storefront logo
 - Pastel colour scheme and card hover effects
 
