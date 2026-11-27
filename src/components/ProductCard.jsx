@@ -1,4 +1,9 @@
+import { useState } from 'react'
+
 function ProductCard({ title, description, category, brand, price, rating, image, stock }) {
+
+    const [cart, setCart] = useState(false)
+
     return (
 
         <div className="col-12 col-sm-6 col-lg-4">
@@ -53,6 +58,30 @@ function ProductCard({ title, description, category, brand, price, rating, image
                             {stock} in stock
                         </span>
 
+                    </div>
+
+                    <div className="mt-3">
+                        <button
+                            className="btn w-100 fw-semibold"
+                            style={{
+                                backgroundColor: cart ? '#D8C5EF' : '#7545AD',
+                                color: cart ? '#39265C' : '#FFFFFF'
+                            }}
+                            onClick={() => setCart(!cart)}
+                        >
+                            <i className={cart ? 'bi bi-cart-dash me-2' : 'bi bi-cart-plus me-2'}></i>
+                            {cart ? 'Remove from Cart' : 'Add to Cart'}
+                        </button>
+                        
+                        <div className="mt-2" style={{ height: '24px' }}>
+                            {cart && (
+                                <p className="text-success text-center mt-2 mb-0">
+                                    Added to cart!
+                                </p>
+                            )}
+
+                        </div>
+                        
                     </div>
 
                 </div>
